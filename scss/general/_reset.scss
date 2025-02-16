@@ -1,0 +1,15 @@
+//varibles
+@import "../utilidades/variables"; 
+
+/* resete css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos del body general */
+
+body {
+    background-color: $color-de-fondo;
+}

@@ -1,0 +1,46 @@
+//import variables 
+@import "../utilidades/variables";
+
+/* estilos nuestros clientes */
+
+/* comentarios*/
+
+.comentarios {
+    background-color: $color-de-fondo;
+    padding: 40px 20px;
+}
+
+.comentarios h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.comentarios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.comentario {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.comentario-texto {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.comentario-cliente {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+}

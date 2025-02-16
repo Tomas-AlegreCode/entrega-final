@@ -1,0 +1,28 @@
+//sin parametros
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//con parametros 
+@mixin grid ($grid, $column, $row){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+
+//titulos al centro 
+@mixin titulos-centrados ($margin, $padding) {
+    margin:$margin;
+    padding: $padding;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin footer-global ($paddgin) {
+    padding: $paddgin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

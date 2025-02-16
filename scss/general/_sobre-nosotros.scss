@@ -1,0 +1,41 @@
+//import variables 
+@import "../utilidades/variables";
+
+/* estilos sobre nosotros */
+/* header */
+
+.divider {
+    margin: 20px;
+    background-color: black;
+}
+
+/*main*/
+section {
+    div {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.txt-ceo {
+    font-size: 3rem;
+}
+
+.img-ceo {
+    border-radius: 20%;
+}
+
+/* main */
+
+.contenedor-titulo {
+    margin: 5%;
+}
+
+.img-nuestra-historia {
+width: 500px;
+height: auto;
+}
+
+.nuestra-historia-contenido {
+    margin-bottom: 150px;
+}

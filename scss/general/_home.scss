@@ -1,0 +1,293 @@
+//import de mixin
+@import "../utilidades/mixin";
+
+//import de variables
+@import "../utilidades/variables";
+
+/* estilos del header*/
+
+header {
+    @include flex; 
+    background-color: $color-de-fondo;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    nav {
+        ul {
+            display: flex;
+            gap: 50px;
+            margin-right:10px;
+        }
+    }
+}
+
+ul {
+    li {
+        a {
+            text-decoration: none;
+            color: $color-tipografia;
+        }
+    }
+}
+
+header {
+    div {
+        img {
+            margin-left: 10px;
+        }
+    }
+}
+
+/*Estilos del main*/
+/*home*/
+// seccion numero 1 grid-servicios
+.grid-wrapper {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  }
+  
+.grid-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    align-items: stretch;
+  
+    // Grid en Desktop (4 columnas)
+    grid-template-columns: repeat(4, 1fr);
+  
+    // Tablet (2 columnas)
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    // Mobile (1 columna)
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+// Estilos de cada tarjeta
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+  }
+
+/*seccion 2 nuestros objetivos*/
+
+main {
+  .nuestro-objetivo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 425px;
+      background-color: $color-banner-dos;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      gap: 2.5rem;
+        
+  } 
+  .p-nuestro-objetivo {
+      font-size: large;
+      word-wrap: break-word;
+      text-align: justify;
+      max-width: 700px;
+      
+  }
+  .h2-nuestro-objetivo {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: oblique;
+      font-size: xx-large;
+  }
+}
+
+/*Seccion 3: redes sociales*/
+main {
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    // Para sm
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+    
+    // Para lg
+    @media (max-width: 992px) {
+      gap: 70px;
+    }
+  }
+
+  .texto-redes-sociales {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    font-weight: 100;
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 3rem;
+    }
+
+    .boton-follow {
+      background-color: $color-resaltar-texto;
+
+      &:hover {
+        background-color: $color-banner-uno;
+        border-color: lighten($color-banner-uno, 10%);
+      }
+    }
+  }
+
+  // Para sm
+  @media (max-width: 576px) {
+    .redes-sociales {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .texto-redes-sociales p {
+      font-size: 2rem;
+    }
+  }
+
+  // Para lg
+  @media (max-width: 992px) {
+    .redes-sociales {
+      gap: 50px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+
+/*Estilos banner horarios*/
+.banner-horarios {
+  width: 100%;
+  height: 425px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url("../../img/img-ubi-home-3753x425.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+h2, p {
+  color: black;
+  list-style: none;
+}
+
+.lista-horario {
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.box-white {
+  background-color: white;
+  max-width: 300px;
+}
+
+/*estilos footer*/
+.footer {
+  background-color: $color-banner-dos;
+  color: #fff;
+  padding: 40px 0;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+
+    .footer-col {
+      max-width: 300px;
+      
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      iframe {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .social-links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+
+            i {
+              margin-right: 8px;
+            }
+
+            &:hover {
+              color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-col {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+

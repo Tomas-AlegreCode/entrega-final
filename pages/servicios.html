@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descubre nuestros servicios: venta de videojuegos, consolas, accesorios y mantenimiento técnico. ¡Confía en The Arcade!">
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Servicios</title>
+    
+  </head>
+  <body>
+    <header>
+      <!-- logo banner-->
+      <div>
+        <img src="../img/logo-idea-uno-110x110.png" alt="logo de la empresa">
+      </div>
+       
+       <!-- menú desplegable de bootstrap, mobile-->
+        <div class="btn-group d-md-none d-lg-none d-xl-none">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+          </button>
+
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="../index.html">Home</a></li>
+           <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+           <li><a class="dropdown-item" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+           <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+           <li><a class="dropdown-item" href="nuestros-clientes.html">Nuestros Clientes</a></li>
+            </ul>
+        </div>
+        
+        <!-- menu de navegacion desktop -->
+        <nav class="menu-nav d-none d-md-block menu-desktop">
+          <ul>
+            <li><a class="" href="../index.html">Home</a></li>
+            <li><a class="" href="servicios.html">Servicios</a></li>
+            <li><a class="" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a class="" href="contacto.html">Contacto</a></li>
+            <li><a class="" href="nuestros-clientes.html">Nuestros Clientes</a></li>
+          </ul> 
+        </nav>
+    </header>
+    <main>
+      
+      <!-- tarjetas de servicios -->
+      <section class="servicios">
+        <div class="servicios-titulo">
+          <h2>Nuestros Servicios</h2>
+          <p>Descubre todo lo que tenemos para ofrecerte en videojuegos, consolas y más.</p>
+        </div>
+          
+        <div class="servicios-grid">
+          <div class="servicio">
+            <i class="fas fa-gamepad"></i>
+            <h3>Venta de Videojuegos</h3>
+            <p>Encuentra los últimos lanzamientos y los clásicos de siempre.</p>
+            <a href="contacto.html" class="btn-servicio">Contáctanos</a>
+          </div>
+          
+          <div class="servicio">
+            <i class="fas fa-tv"></i>
+            <h3>Venta de Consolas</h3>
+            <p>Las mejores consolas al mejor precio, con garantía incluida.</p>
+            <a href="contacto.html" class="btn-servicio">Contáctanos</a>
+          </div>
+          
+          <div class="servicio">
+            <i class="fas fa-headset"></i>
+            <h3>Accesorios</h3>
+            <p>Controladores, auriculares, teclados y mucho más.</p>
+            <a href="contacto.html" class="btn-servicio">Contáctanos</a>
+          </div>
+          
+          <div class="servicio">
+            <i class="fas fa-tools"></i>
+            <h3>Mantenimiento y Reparación</h3>
+            <p>Solucionamos problemas en tus consolas para que sigas jugando sin interrupciones.</p>
+            <a href="contacto.html" class="btn-servicio">Contáctanos</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- footer -->
+     <footer class="footer">
+      <div class="container">
+       <div class="row">
+
+         <!-- Columna 1: Ubicación (Google Maps) -->
+         <div class="col-12 col-md-6 footer-col">
+          <h3>Ubicación</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.056648224415!2d-72.61172008460707!3d41.15064044416315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDFuMzQuNTYwNTkiLCAtNzInNDExLjQ0NjMzNzg!5e0!3m2!1ses!2sar!4v1629991466719!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+       
+       <!-- Columna 2: Redes Sociales -->
+       <div class="col-12 col-md-6 footer-col">
+        <h3>Follow Us</h3>
+        <p>Siguenos en nuestras redes sociales para más novedades.</p>
+        <ul class="social-links">
+         <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+         <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+         <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+         <li><a href="#" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+       </div>
+     </div>
+     </footer>
+        
+    <!-- java -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

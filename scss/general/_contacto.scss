@@ -1,0 +1,60 @@
+//import variables 
+@import "../utilidades/variables";
+
+
+.contacto {
+    padding: 60px 20px;
+    background-color: $color-de-fondo;
+    text-align: center;
+
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+        gap: 40px;
+
+        .info-contacto, .formulario-contacto {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input, textarea {
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                font-size: 1rem;
+            }
+
+            button {
+                background-color: $color-banner-uno;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: $color-banner-dos;
+                }
+            }
+        }
+    }
+}
+
