@@ -1,6 +1,6 @@
 //import variables 
 @import "../utilidades/variables";
-/*Estilos slieder del header*/
+/*Estilos slider del header*/
 .menu-desktop {
 
     ul {
@@ -38,4 +38,19 @@
       }
     }
   }
+
+//nav bar mobile 
+  
+/*Cambio color por defecto hover de bootstrap, nav bar mobile*/
+header {
+  div {
+    .dropdown-menu {
+      .dropdown-item {
+        &:hover {
+          background-color: $color-banner-dos;
+        }
+      }
+    }
+  }
+}
   
