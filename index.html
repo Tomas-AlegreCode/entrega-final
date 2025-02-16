@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Arcade: tu tienda líder en videojuegos, consolas y accesorios. Servicio técnico especializado. ¡Visítanos en Corrientes, Argentina!">
+
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,6 +16,11 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
+
+    
+
+    <!-- icono de navegador -->
+    <link rel="shortcut icon" href="img/logo-idea-uno-110x110.png">
      
     <title>The Arcade</title>
 
@@ -59,7 +67,7 @@
     <main>
 
       <!-- Carrusel de imagenes de bootstrap -->
-      <div id="carouselExampleCaptions" class="carousel slide">
+      <div data-aos="zoom-in" id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -125,7 +133,7 @@
        </section>
        
        <!-- seccion numero 2: nuestro objetivo-->
-         <section class="container-fluid my-5 nuestro-objetivo">
+         <section data-aos="fade-down" class="container-fluid my-5 nuestro-objetivo">
           <h2 class="h2-nuestro-objetivo">Nuestro Objetivo</h2>
           <p class="p-nuestro-objetivo">En nuestra empresa, vivimos y respiramos videojuegos. Nos apasiona llevar la mejor experiencia gamer a cada jugador, ofreciendo una selección épica de videojuegos, consolas y accesorios de última generación. <br> Creemos que el gaming es más que un pasatiempo: es una forma de conectar, explorar y desafiar los límites. 🚀🎮</p>
          </section>
@@ -149,7 +157,7 @@
           </section>
           
           <!-- banner horarios -->
-           <section class="banner-horarios">
+           <section data-aos="zoom-out-up" class="banner-horarios">
             <div class="box-white">
              <h2>
               Visitanos <br>
@@ -196,7 +204,13 @@
     </div>
   </footer>
 
-    <!-- java -->
+    <!--boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
