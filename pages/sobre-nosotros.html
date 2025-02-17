@@ -18,6 +18,9 @@
     <!-- icono de navegador -->
     <link rel="shortcut icon" href="../img/logo-idea-uno-110x110.png">
 
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Sobre Nosotros</title>
     
   </head>
@@ -64,7 +67,7 @@
         <hr class="border border-2">
        </div>
        
-      <section class="container-fluid d-flex justify-content-center">
+      <section data-aos="fade-right" class="container-fluid d-flex justify-content-center">
         <div class="row">
           <h2 class="col-12 col-md-6 col-lg-6 mb-4 txt-ceo"> "Creando buenos recuerdos junto a vos". CEO </h2>
           <div class="col-12 col-md-6 col-lg-6 mb-4">
@@ -80,12 +83,12 @@
       </div>
 
       <!-- Titulo main -->
-      <div class="contenedor-titulo">
+      <div data-aos="fade-left" class="contenedor-titulo">
        <h1 class="container-fluid d-flex justify-content-center">Nuestra Historia</h1>
       </div>
        
       <!-- nuestra historia: img y texto -->
-       <section class="container-fluid nuestra-historia-contenido">
+       <section data-aos="fade-left" class="container-fluid nuestra-historia-contenido">
          <div class="row gx-4 gy-2 justify-content-center">
            <img src="../img/img-nuestra-historia.jpg" alt="fotografia del costado de una casa antigua" class="col-12 col-md-6 col-lg-6 img-fluid img-nuestra-historia">
            <p class="col-12 col-md-6 col-lg-6">
@@ -115,7 +118,7 @@
          <!-- Columna 1: Ubicación (Google Maps) -->
          <div class="col-12 col-md-6 footer-col">
            <h3>Ubicación</h3>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.056648224415!2d-72.61172008460707!3d41.15064044416315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDFuMzQuNTYwNTkiLCAtNzInNDExLjQ0NjMzNzg!5e0!3m2!1ses!2sar!4v1629991466719!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1088.531447966701!2d-58.855693561076976!3d-27.473411306768174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456cc1365fe08d%3A0xfc39fc6373711a76!2sMirador%20Puente%20Gral.%20Belgrano!5e0!3m2!1ses-419!2sar!4v1739730512176!5m2!1ses-419!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
  
        <!-- Columna 2: Redes Sociales -->
@@ -134,5 +137,11 @@
 
     <!-- java -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
